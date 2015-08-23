@@ -13,6 +13,7 @@
 		6459C48B1B8A4F04009959BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6459C48A1B8A4F04009959BB /* Images.xcassets */; };
 		6459C48E1B8A4F05009959BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6459C48C1B8A4F04009959BB /* LaunchScreen.xib */; };
 		6459C49A1B8A4F05009959BB /* CellSelectionCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6459C4991B8A4F05009959BB /* CellSelectionCallbackTests.swift */; };
+		6459C4A41B8A5205009959BB /* SelectionCallbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6459C4A31B8A5205009959BB /* SelectionCallbackTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6459C4931B8A4F05009959BB /* CellSelectionCallbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellSelectionCallbackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6459C4981B8A4F05009959BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6459C4991B8A4F05009959BB /* CellSelectionCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSelectionCallbackTests.swift; sourceTree = "<group>"; };
+		6459C4A31B8A5205009959BB /* SelectionCallbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCallbackTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				6459C48A1B8A4F04009959BB /* Images.xcassets */,
 				6459C48C1B8A4F04009959BB /* LaunchScreen.xib */,
 				6459C4811B8A4F04009959BB /* Supporting Files */,
+				6459C4A31B8A5205009959BB /* SelectionCallbackTableViewCell.swift */,
 			);
 			path = CellSelectionCallback;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6459C4A41B8A5205009959BB /* SelectionCallbackTableViewCell.swift in Sources */,
 				6459C4861B8A4F04009959BB /* ViewController.swift in Sources */,
 				6459C4841B8A4F04009959BB /* AppDelegate.swift in Sources */,
 			);
