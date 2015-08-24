@@ -12,15 +12,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    var array = [1,1]
+    var array: [UInt] = [1,1]
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for x in stride(from: 2, through: 30, by: 1){
-            let i = array[x-2]
-            let j = array[x-1]
-            array.append(i+j)
-        }
+        for x in stride(from: 2, through: Int.max, by: 1){
+            let i = array[x - 2]
+            let j = array[x - 1]
+            if (UInt.max - j) > i{
+                array.append(i+j)
+            } else {
+                break
+            }
+        } 
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -39,7 +43,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.array.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
-        cell.textLabel?.text = "\(self.array[indexPath.row])"
+        
+        let string = String(format: "%3d", arguments: [indexPath.row + 1])
+        cell.textLabel?.text = "\(string): \(self.array[indexPath.row])"
         return cell
     }
     
